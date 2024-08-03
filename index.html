@@ -20,11 +20,38 @@
 		<!--begin::Layout Themes(used by all pages)-->
 		<!--end::Layout Themes-->
 		<link rel="shortcut icon" href="assets/media/logos/cropped-Icone_web-bn-32x32.png" />
+	
+		body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #video-intro {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1000;
+        }
+        #main-content {
+            display: none;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+	
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
 	<body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled page-loading">
 		<!--begin::Main-->
+		<video id="video-intro" autoplay muted>
+        <source src="assets/media/animation/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    	</video>
 		<!--begin::Header Mobile-->
 		<div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
 			<!--begin::Logo-->
@@ -882,6 +909,31 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/widgets.js"></script>
 		<!--end::Page Scripts-->
+		<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('video-intro');
+            const mainContent = document.getElementById('main-content');
+
+            video.addEventListener('ended', function() {
+                video.style.display = 'none';
+                mainContent.style.display = 'block';
+            });
+
+            // In case the video doesn't play or is too long, add a skip option
+            video.addEventListener('canplay', function() {
+                const skipButton = document.createElement('button');
+                skipButton.textContent = 'Skip Intro';
+                skipButton.style.cssText = 'position: fixed; bottom: 20px; right: 20px; z-index: 1001; padding: 10px;';
+                document.body.appendChild(skipButton);
+
+                skipButton.addEventListener('click', function() {
+                    video.style.display = 'none';
+                    mainContent.style.display = 'block';
+                    skipButton.remove();
+                });
+            });
+        });
+    </script>
 	</body>
 	<!--end::Body-->
 </html>

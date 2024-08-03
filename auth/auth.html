@@ -67,7 +67,7 @@
 							</div>
 							<form class="form">
 								<div class="form-group">
-									<input class="form-control h-auto text-white bg-dark-o-25 rounded-pill border-0 py-4 px-8" type="text" placeholder="Email" name="username" autocomplete="off" />
+									<input class="form-control h-auto text-white bg-dark-o-25 rounded-pill border-0 py-4 px-8" type="text" placeholder="Email" name="username" autocomplete="off" required/>
 								</div>
                                 <div class="form-group password-wrapper">
                                     <input class="form-control h-auto text-white bg-dark-o-25 rounded-pill border-0 py-4 px-8" type="password" placeholder="Password" name="password" />
@@ -81,9 +81,8 @@
                                     </label>
 									<a href="javascript:;" id="kt_login_forgot" class="text-dark font-weight-bold">Forget Password ?</a>
 								</div>
-								<div class="form-group text-center mt-10">
-									<button id="kt_login_signin_submit" class="btn btn-pill btn-danger opacity-90 px-15 py-3">Sign In</button>
-								</div>
+								
+								<input class="btn btn-pill btn-danger opacity-90 px-15 py-3" type="submit" value="Connexion">
 							</form>
 							<div class="mt-10">
 								<span class="opacity-99 mr-4 text-black-80">Don't have an account yet?</span>
@@ -105,7 +104,7 @@
                                     <input class="form-control h-auto text-white bg-dark-o-25 rounded-pill border-0 py-4 px-8" type="text" placeholder="Email" name="email" autocomplete="off" />
                                 </div>
                                 <div class="form-group password-wrapper">
-                                    <input class="form-control h-auto text-white bg-dark-o-25 rounded-pill border-0 py-4 px-8" type="password" placeholder="Password" name="password" />
+                                    <input class="form-control h-auto text-white bg-dark-o-25 rounded-pill border-0 py-4 px-8" type="password" placeholder="Password" name="password" required/>
                                     <i class="fas fa-eye toggle-password"></i>
                                 </div>
                                 <div class="form-group password-wrapper">
@@ -120,12 +119,9 @@
                                     <div class="form-text text-muted text-center"></div>
                                 </div>
                                 <div class="form-group">
-                                    <button id="kt_login_signup_submit" type="submit" class="btn btn-pill btn-danger opacity-90 px-15 py-3 m-2">Sign Up</button>
-                                    <button id="kt_login_signup_cancel" type="button" class="btn btn-pill btn-outline-white opacity-70 px-15 py-3 m-2">Cancel</button>
-                                </div>
-                                <div class="error-message" id="errorMessage">
-                                    <i class="fas fa-exclamation-triangle"></i> Les mots de passe ne correspondent pas.
-                                </div>
+									<input class="btn btn-pill btn-danger opacity-90 px-15 py-3 m-2" type="submit" value="S'inscrire">
+									<button id="kt_login_signup_cancel" type="button" class="btn btn-pill btn-outline-white opacity-70 px-15 py-3 m-2">Cancel</button>
+								</div>
                             </form>
 						</div>
 						<!--end::Login Sign up form-->
@@ -137,10 +133,10 @@
 							</div>
 							<form class="form">
 								<div class="form-group mb-10">
-									<input class="form-control h-auto text-white bg-dark-o-25 rounded-pill border-0 py-4 px-8" type="text" placeholder="Email" name="email" id="kt_email" autocomplete="off" />
+									<input class="form-control h-auto text-white bg-dark-o-25 rounded-pill border-0 py-4 px-8" type="text" placeholder="Email" name="email" id="kt_email" autocomplete="off" required />
 								</div>
 								<div class="form-group">
-									<button id="kt_login_forgot_submit" class="btn btn-pill btn-danger opacity-90 px-15 py-3 m-2">Request</button>
+									<input class="btn btn-pill btn-danger opacity-90 px-15 py-3 m-2" type="submit" value="Request"></input>
 									<button id="kt_login_forgot_cancel" class="btn btn-pill btn-outline-white opacity-70 px-15 py-3 m-2">Cancel</button>
 								</div>
 							</form>
@@ -164,33 +160,17 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/auth/login.js"></script>
 		<!--end::Page Scripts-->
-        <script>
-        document.getElementById('signupForm').addEventListener('submit', function(event) {
-            const password = document.querySelector('input[name="password"]');
-            const rpassword = document.querySelector('input[name="rpassword"]');
-            const errorMessage = document.getElementById('errorMessage');
+<script>
+document.querySelectorAll('.toggle-password').forEach(item => {
+    item.addEventListener('click', function() {
+        const passwordField = this.previousElementSibling;
+        const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordField.setAttribute('type', type);
+        this.classList.toggle('fa-eye-slash');
+    });
+});
 
-            if (password.value !== rpassword.value) {
-                event.preventDefault();
-                password.classList.add('error');
-                rpassword.classList.add('error');
-                errorMessage.style.display = 'block';
-            } else {
-                password.classList.remove('error');
-                rpassword.classList.remove('error');
-                errorMessage.style.display = 'none';
-            }
-        });
-
-        document.querySelectorAll('.toggle-password').forEach(item => {
-            item.addEventListener('click', function() {
-                const passwordField = this.previousElementSibling;
-                const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-                passwordField.setAttribute('type', type);
-                this.classList.toggle('fa-eye-slash');
-            });
-        });
-    </script>
+</script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 	</body>
