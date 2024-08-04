@@ -25,6 +25,8 @@
             margin: 0;
             padding: 0;
             height: 100%;
+        }
+        body.video-playing {
             overflow: hidden;
         }
         #video-intro {
@@ -112,7 +114,10 @@
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Home">
 								<a href="#" class="nav-link btn btn-icon btn-text-danger btn-hover-bg-white btn-lg active">
-									<i class="flaticon2-protection icon-lg"></i>
+									<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    								<dotlottie-player src="https://lottie.host/428fa527-e86e-4a4c-a66c-9f16718be70a/pdSxfYHkX0.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></dotlottie-player>
+
 								</a>
 							</li>
 							<!--end::Item-->
@@ -134,6 +139,13 @@
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Management">
 								<a href="#" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_5" role="tab">
 									<i class="flaticon2-avatar icon-lg"></i>
+								</a>
+							</li>
+							<!--end::Item-->
+							<!--begin::Item-->
+							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Management">
+								<a href="#" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_5" role="tab">   
+									<i class="flaticon2-gear icon-lg"></i>
 								</a>
 							</li>
 							<!--end::Item-->
@@ -843,7 +855,7 @@
 					<!--end:Item-->
 					
 					<!--begin::Item-->
-					<a href="../auth/auth.html" class="navi-item">
+					<a href="auth/auth.html" class="navi-item">
 						<div class="navi-link">
 							<div class="symbol symbol-40 bg-light mr-3">
 								<div class="symbol-label">
@@ -851,9 +863,10 @@
 										<!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Mail-opened.svg-->
 										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 											<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-												<rect x="0" y="0" width="24" height="24" />
-												<path d="M6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,12 C19,12.5522847 18.5522847,13 18,13 L6,13 C5.44771525,13 5,12.5522847 5,12 L5,3 C5,2.44771525 5.44771525,2 6,2 Z M7.5,5 C7.22385763,5 7,5.22385763 7,5.5 C7,5.77614237 7.22385763,6 7.5,6 L13.5,6 C13.7761424,6 14,5.77614237 14,5.5 C14,5.22385763 13.7761424,5 13.5,5 L7.5,5 Z M7.5,7 C7.22385763,7 7,7.22385763 7,7.5 C7,7.77614237 7.22385763,8 7.5,8 L10.5,8 C10.7761424,8 11,7.77614237 11,7.5 C11,7.22385763 10.7761424,7 10.5,7 L7.5,7 Z" fill="#000000" opacity="0.3" />
-												<path d="M3.79274528,6.57253826 L12,12.5 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 Z" fill="#000000" />
+												<rect x="0" y="0" width="24" height="24"/>
+												<path d="M14.0069431,7.00607258 C13.4546584,7.00607258 13.0069431,6.55855153 13.0069431,6.00650634 C13.0069431,5.45446114 13.4546584,5.00694009 14.0069431,5.00694009 L15.0069431,5.00694009 C17.2160821,5.00694009 19.0069431,6.7970243 19.0069431,9.00520507 L19.0069431,15.001735 C19.0069431,17.2099158 17.2160821,19 15.0069431,19 L3.00694311,19 C0.797804106,19 -0.993056895,17.2099158 -0.993056895,15.001735 L-0.993056895,8.99826498 C-0.993056895,6.7900842 0.797804106,5 3.00694311,5 L4.00694793,5 C4.55923268,5 5.00694793,5.44752105 5.00694793,5.99956624 C5.00694793,6.55161144 4.55923268,6.99913249 4.00694793,6.99913249 L3.00694311,6.99913249 C1.90237361,6.99913249 1.00694311,7.89417459 1.00694311,8.99826498 L1.00694311,15.001735 C1.00694311,16.1058254 1.90237361,17.0008675 3.00694311,17.0008675 L15.0069431,17.0008675 C16.1115126,17.0008675 17.0069431,16.1058254 17.0069431,15.001735 L17.0069431,9.00520507 C17.0069431,7.90111468 16.1115126,7.00607258 15.0069431,7.00607258 L14.0069431,7.00607258 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" transform="translate(9.006943, 12.000000) scale(-1, 1) rotate(-90.000000) translate(-9.006943, -12.000000) "/>
+												<rect fill="#000000" opacity="0.3" transform="translate(14.000000, 12.000000) rotate(-270.000000) translate(-14.000000, -12.000000) " x="13" y="6" width="2" height="12" rx="1"/>
+												<path d="M21.7928932,9.79289322 C22.1834175,9.40236893 22.8165825,9.40236893 23.2071068,9.79289322 C23.5976311,10.1834175 23.5976311,10.8165825 23.2071068,11.2071068 L20.2071068,14.2071068 C19.8165825,14.5976311 19.1834175,14.5976311 18.7928932,14.2071068 L15.7928932,11.2071068 C15.4023689,10.8165825 15.4023689,10.1834175 15.7928932,9.79289322 C16.1834175,9.40236893 16.8165825,9.40236893 17.2071068,9.79289322 L19.5,12.0857864 L21.7928932,9.79289322 Z" fill="#000000" fill-rule="nonzero" transform="translate(19.500000, 12.000000) rotate(-90.000000) translate(-19.500000, -12.000000) "/>
 											</g>
 										</svg>
 										<!--end::Svg Icon-->
@@ -861,8 +874,8 @@
 								</div>
 							</div>
 							<!--begin::Separator-->
-				<div class="separator separator-dashed my-7"></div>
-				<!--end::Separator-->
+							<div class="separator separator-dashed my-7"></div>
+							<!--end::Separator-->
 							<div class="navi-text">
 								<div class="font-weight-bold">Logout</div>
 							</div>
@@ -898,7 +911,7 @@
 		<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "danger": "#8950FC", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "danger": "#E1E9FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "danger": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
 		<!--end::Global Config-->
 		<!--begin::Global Theme Bundle(used by all pages)-->
-		<script src="../assets/plugins/global/plugins.bundle.js"></script>
+		<script src="assets/plugins/global/plugins.bundle.js"></script>
 		<script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!--end::Global Theme Bundle-->
@@ -909,15 +922,20 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/widgets.js"></script>
 		<!--end::Page Scripts-->
+		
 		<script>
         document.addEventListener('DOMContentLoaded', function() {
             const video = document.getElementById('video-intro');
             const mainContent = document.getElementById('main-content');
+            const body = document.body;
 
-            video.addEventListener('ended', function() {
+            function showMainContent() {
                 video.style.display = 'none';
                 mainContent.style.display = 'block';
-            });
+                body.classList.remove('video-playing');
+            }
+
+            video.addEventListener('ended', showMainContent);
 
             // In case the video doesn't play or is too long, add a skip option
             video.addEventListener('canplay', function() {
@@ -927,13 +945,13 @@
                 document.body.appendChild(skipButton);
 
                 skipButton.addEventListener('click', function() {
-                    video.style.display = 'none';
-                    mainContent.style.display = 'block';
+                    showMainContent();
                     skipButton.remove();
                 });
             });
         });
     </script>
+	
 	</body>
 	<!--end::Body-->
 </html>
