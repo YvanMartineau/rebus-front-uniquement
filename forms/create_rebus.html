@@ -22,25 +22,21 @@
 		<!--end::Layout Themes-->
 		<link rel="shortcut icon" href="assets/media/logos/cropped-Icone_web-bn-32x32.png" />
 		<style>
-			.switch-outline.switch-primary input:checked ~ span:before {
-				border-color: primary;
-				background-color: transparent;
-			}
+			.switch-icon span {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: red;
+			transition: background-color 0.3s;
+		}
 
-			.switch-outline.switch-primary input:checked ~ span:after {
-				background-color: primary;
-				border-color: #3699FF;
-			}
+		.switch-danger span {
+			background-color: red;
+		}
 
-			.switch-outline.switch-danger input:checked ~ span:before {
-				border-color: danger;
-				background-color: transparent;
-			}
-
-			.switch-outline.switch-danger input:checked ~ span:after {
-				background-color: #F64E60;
-				border-color: #F64E60;
-			}
+		.switch-primary span {
+			background-color: green;
+		}
 			</style>
 	</head>
 	<!--end::Head-->
@@ -281,7 +277,7 @@
 									
 									</div>
 									<div class="form-group row">
-										<label class="col-1 col-form-label" id="switchLabel">Danger</label>
+										<label class="col-2 col-form-label" id="switchLabel">Non Fonctionnel</label>
 										<div class="col-3">
 											<span class="switch switch-outline switch-icon switch-danger" id="switchSpan">
 												<label>
@@ -595,7 +591,12 @@
 					switchSpan.classList.add('switch-primary');
 				}
 			});
-		});
+
+    // Initial state setup
+    toggleSwitch.checked = true;
+    switchLabel.textContent = 'Danger';
+    switchSpan.classList.add('switch-danger');
+});
 		</script>
 	</body>
 	<!--end::Body-->
