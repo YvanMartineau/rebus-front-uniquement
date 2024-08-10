@@ -113,7 +113,7 @@
 						<ul class="nav flex-column">
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Home">
-								<a href="#" class="nav-link btn btn-icon btn-text-danger btn-hover-bg-white btn-lg active">
+								<a href="index.html" class="nav-link btn btn-icon btn-text-danger btn-hover-bg-white btn-lg active">
 									<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
     								<dotlottie-player src="https://lottie.host/428fa527-e86e-4a4c-a66c-9f16718be70a/pdSxfYHkX0.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></dotlottie-player>
@@ -123,28 +123,28 @@
 							<!--end::Item-->
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Les Rebus">
-								<a href="#" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
+								<a href="#" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg">
 									<i class="flaticon2-list-3 icon-lg"></i>
 								</a>
 							</li>
 							<!--end::Item-->	
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Stats">
-								<a href="#" class="nnav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_5" role="tab">
+								<a href="#" class="nnav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg">
 									<i class="flaticon2-analytics-2 icon-lg"></i>
 								</a>
 							</li>
 							<!--end::Item-->
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Management">
-								<a href="#" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_5" role="tab">
+								<a href="menu/users.html" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg" >
 									<i class="flaticon2-avatar icon-lg"></i>
 								</a>
 							</li>
 							<!--end::Item-->
 							<!--begin::Item-->
-							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Management">
-								<a href="#" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_5" role="tab">   
+							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Settings">
+								<a href="menu/settings.html" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg">   
 									<i class="flaticon2-gear icon-lg"></i>
 								</a>
 							</li>
@@ -469,7 +469,8 @@
 																	<span class="label label-lg label-light-danger label-inline">Rebus</span>
 																</td>
 																<td class="pr-0 text-right">
-																	<a href="#" class="btn btn-icon btn-light btn-hover-success btn-sm">
+																	<!-- Button trigger modal-->
+																		<button type="button" class="btn btn-icon btn-light btn-hover-success btn-sm " data-toggle="modal" data-target="#exampleModalLong">																	
 																		<span class="svg-icon svg-icon-md svg-icon-success">
 																			<!--begin::Svg Icon | path:assets/media/svg/icons/General/Settings-1.svg-->
 																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -480,8 +481,29 @@
 																				</g>
 																			</svg>
 																			<!--end::Svg Icon-->
-																		</span>
-																	</a>
+																		</span>															
+																	</button>
+																	<!-- Modal-->
+																	<div class="modal fade" id="exampleModalLong" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
+																		<div class="modal-dialog" role="document">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+																					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																						<i aria-hidden="true" class="ki ki-close"></i>
+																					</button>
+																				</div>
+																				<div class="modal-body text-left">
+																					... Hello
+																				</div>
+																				<div class="modal-footer">
+																					<button type="button" class="btn btn-light-success font-weight-bold" data-dismiss="modal">Close</button>
+																					
+																				</div>
+																			</div>
+																		</div>
+																	</div>			
+
 																	<a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
 																		<span class="svg-icon svg-icon-md svg-icon-primary">
 																			<!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->

@@ -21,23 +21,7 @@
 		<!--begin::Layout Themes(used by all pages)-->
 		<!--end::Layout Themes-->
 		<link rel="shortcut icon" href="assets/media/logos/cropped-Icone_web-bn-32x32.png" />
-		<style>
-			.switch-icon span {
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			background-color: red;
-			transition: background-color 0.3s;
-		}
-
-		.switch-danger span {
-			background-color: red;
-		}
-
-		.switch-primary span {
-			background-color: green;
-		}
-			</style>
+	
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -58,7 +42,7 @@
 				</button>
 				<!--end::Aside Mobile Toggle-->
 				<!--begin::Header Menu Mobile Toggle-->
-				<h6 class="p-6">Gestion Rebus</h6>
+				<h6 class="p-6">Appareil</h6>
 				</button>
 				<!--end::Header Menu Mobile Toggle-->
 				<!--begin::Topbar Mobile Toggle-->
@@ -102,39 +86,38 @@
 						<ul class="nav flex-column">
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Home">
-								<a href="index.html" class="nav-link btn btn-icon btn-text-danger btn-hover-bg-white btn-lg active">
-									<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    								<dotlottie-player src="https://lottie.host/428fa527-e86e-4a4c-a66c-9f16718be70a/pdSxfYHkX0.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></dotlottie-player>
-
+								<a href="index.html" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg">
+									<i class="flaticon2-protection icon-lg"></i>
 								</a>
 							</li>
+
 							<!--end::Item-->
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Les Rebus">
-								<a href="#" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg">
+								<a href="#" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg" >
 									<i class="flaticon2-list-3 icon-lg"></i>
 								</a>
 							</li>
 							<!--end::Item-->	
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Stats">
-								<a href="#" class="nnav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg">
+								<a href="#" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg" >
 									<i class="flaticon2-analytics-2 icon-lg"></i>
 								</a>
 							</li>
 							<!--end::Item-->
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Management">
-								<a href="menu/users.html" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg">
+								<a href="menu/users.html" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg" >
 									<i class="flaticon2-avatar icon-lg"></i>
 								</a>
 							</li>
 							<!--end::Item-->
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Settings">
-								<a href="menu/settings.html" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg">   
-									<i class="flaticon2-gear icon-lg"></i>
+								<a href="menu/settings.html" class="nav-link btn btn-icon btn-text-danger btn-hover-bg-white btn-lg active">   
+									<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+										<dotlottie-player src="https://lottie.host/c1639838-3823-4361-ad56-f51a90837b1e/EXGlf3XUou.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></dotlottie-player>
 								</a>
 							</li>
 							<!--end::Item-->
@@ -163,7 +146,7 @@
 										<!--begin::Header Nav-->
 										<ul class="menu-nav">
 											<li class="menu-item menu-item-active" aria-haspopup="true">
-												<h3 class="d-none d-lg-flex align-items-center mr-10 mb-0 text-white">Gestion Rebus</h3>
+												<h3 class="d-none d-lg-flex align-items-center mr-10 mb-0 text-white">Appareil</h3>
 											</li>
 											
 										</ul>
@@ -197,175 +180,132 @@
 					</div>
 					<!--end::Header-->
 					<!--begin::Content-->
-					<div class="content d-flex flex-column flex-column-fluid" id="kt_content" style="background-repeat: repeat; background-image: url(assets/media/bg/bg_global_afb.png);">
+					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+						<!--begin::Subheader-->
+						<div class="subheader py-5 py-lg-10 gutter-b subheader-transparent" id="kt_subheader" style="background-color: #888898; background-position: right bottom; background-size: auto 100%; background-repeat: no-repeat; background-image: url(assets/media/svg/shapes/abstract-2.svg)">
+							
+						</div>
+						<!--end::Subheader-->
 						
 						<!--begin::Entry-->
-						<div class="d-flex flex-column-fluid m-5" >
+						<div class="d-flex flex-column-fluid">
+                            
 							<!--begin::Container-->
-							<div class="container" >
+							<div class="container">
+                                <a class="btn btn-danger btn-bg-hover-secondary btn-text-white" href="forms/create_Appareil.html">Cree Appareil</a>
 								<!--begin::Dashboard-->
-							<br>
-								<!--begin::Row-->
-								<div class="row">
-									
-									<div class="card card-custom col-xl-12">
-									<div class="card-header">
-									<h3 class="card-title">
-									Creation d'un Rebus
-									</h3>
-									</div>
-									<!--begin::Form-->
-									<form>
-									<div class="card-body">
-										<div class="form-group mb-8">
-											<div class="alert alert-custom alert-default" role="alert">
-											<div class="alert-icon"><i class="flaticon-responsive text-danger"></i></div>
-											<div class="alert-text">
-											Propriete Liee a L'Appareil
-											</div>
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-lg-2 col-form-label">Numero de Serie</label>
-											<div class="input-group col-lg-3 col-md-3 col-sm-8">
-											<div class="input-group-prepend"><span class="input-group-text">#</span></div>
-											<input type="text" class="form-control" placeholder="Numero de Series" />
-											</div>
-										
-											<div class="col-lg-1 col-sm-0"></div>
-											<label class="col-lg-1 col-form-label">Model</label>
-											<div class="col-lg-5 col-md-3 col-sm-8">
-											<input class="form-control" type="text" value="IX500" id="example-text-input"/>
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-form-label text-left col-lg-2 col-sm-12">Selectionner Appareil et la Raison de mise en Rebus</label>
-											<div class="col-lg-9 col-md-9 col-sm-12">
-											<select  multiple="" class="form-control" id="kt_multipleselectsplitter_1">
-											<optgroup label="All In One">
-											<option value="1">Manque d'espace</option>
-											<option value="2">RAM Endommager</option>
-											<option value="3">Pas de Disque Dur</option>
-											<option value="4">Voir Technicien</option>
-											</optgroup>
-											<optgroup label="Scanner">
-											<option value="5">Manque d'espace</option>
-											<option value="6">Ruban Endommager</option>
-											<option value="7">Voir Technicien</option>
-								
-											</optgroup>
-											<optgroup label="Cable Reseau">
-											<option value="5">Manque d'espace</option>
-											<option value="6">Voir Technicien</option>
-											<option value="7">Couper</option>
-											<option value="8">Non Fonctionnel</option>
-											</optgroup>
-											</select>
-											</div>
-										</div>
-										<div class="form-group mb-8">
-											<div class="alert alert-custom alert-default" role="alert">
-											<div class="alert-icon"><i class="flaticon-exclamation text-danger"></i></div>
-											<div class="alert-text">
-											Propriete Liee a L'Etat et Situation du Rebus
-											</div>
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-md-2 col-lg-2 col-sm-12 col-form-label" id="switchLabel">Non Fonctionnel</label>
-											<div class="col-md-2 col-lg-2 col-sm-12">
-												<span class="switch switch-outline switch-icon switch-danger" id="switchSpan">
-													<label>
-														<input type="checkbox" checked="checked" name="select" id="toggleSwitch"/>
-														<span></span>
-													</label>
-												</span>  
-											</div>                          
-										</div>
-										<div class="form-group row">
-											<label class="col-form-label text-left col-lg-2 col-sm-8">Situation</label>
-											<div class=" col-lg-4 col-md-8 col-sm-8">
-											<select class="form-control select2" id="kt_select2_7" disabled="disabled" name="param">
-											<option label="Label"></option>
-											
-											<option value="Rebus" selected>Rebus</option>
-											
-											<optgroup label="Vendu">
-											<option value="Vendu">Vendu</option>
-											
-											</optgroup>
-											<optgroup label="Remis en Service">
-											<option value="Remis en Service">Remis en Service</option>
-											</optgroup>
-											
-											</select>
-											</div>
-										</div>
-										<div class="form-group mb-8">
-											<div class="alert alert-custom alert-default" role="alert">
-											<div class="alert-icon"><i class="flaticon-placeholder text-danger"></i></div>
-											<div class="alert-text">
-											Propriete Liee a L'Agence et Au Service de Provenance du Rebus
-											</div>
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-form-label col-lg-1 col-sm-12">Ville</label>
-											<div class="col-lg-4 col-md-9 col-sm-12">
-											<select class="form-control selectpicker" data-header="Selectionner la ville de Provenance">
-											<option data-subtext="Littoral">Douala</option>
-											<option data-subtext="Yaounde">Yaounde</option>
-											<option data-subtext="Bafoussam">Bafoussam</option>
-											</select>
-											</div>
-											<div class="col-lg-1 col-md-1 col-sm-0"></div>
-											<label class="col-form-label col-lg-1 col-sm-12">Agence</label>
-											<div class="col-lg-5 col-md-5 col-sm-12">
-												<select class="form-control selectpicker" data-size="7" data-live-search="true">
-												<option value="">Select</option>
-												<option value="AF">Akwa</option>
-												<option value="AX">Bonandjo</option>
-												<option value="AL">Millenium</option>
-												</select>
-											</div>
-										</div>									
-										<div class="form-group row">
-											<label class="col-form-label col-lg-1 col-sm-12">Service</label>
-											<div class="col-lg-4 col-md-9 col-sm-12">
-											<select class="form-control selectpicker" data-size="7" data-live-search="true">
-											<option value="">Selectionner un service</option>
-											<option value="AF">Direction Service Informatique</option>
-											<option value="AX">Serive Monetaire</option>
-											<option value="AL">Acceuil</option>
-											<option value="DZ">Caisse</option>
-											<option value="AS">Coffre</option>
-											<option value="AD">Sous-Sol</option>
-											<option value="AO">Operation locales</option>
-											<option value="AI">Operation Internationales</option>
-											<option value="AQ">Securite</option>
-											<option value="AG">Courrier</option>
-											<option value="AR">Service Contentieux</option>
-											<option value="AM">Moyen Generaux</option>
-											<option value="AW">Leasing</option>
-											<option value="AU">Gestionnaire PME</option>
-											</select>
-										</div>
-									</div>
-									<div class="card-footer">
-										<div class="row">
-											<div class="col-2">
-											</div>
-											<div class="col-10">
-											<button type="submit" class="btn btn-success mr-2">Enregistrer</button>
-											<button type="reset" class="btn btn-secondary">Cancel</button>
-											</div>
-										</div>
-									</div>
-									</form>
-									</div>
-								</div>
-								<!--end::Row-->
-								
+								<!--begin::Row-->			
+                                    <div class="card-body py-0">
+                                        <!--begin::Table-->
+                                        <div class="table-responsive">
+                                            <table class="table table-head-custom table-vertical-center" id="kt_advance_table_widget_4">
+                                                <thead>
+                                                    <tr class="text-left">
+                                                        <th class="pl-0" style="width: 2px">
+                                                            <label class="checkbox checkbox-lg checkbox-single">
+                                                                <input type="checkbox" value="1" />
+                                                                <span></span>
+                                                            </label>
+                                                        </th>
+                                                        <th class="pl-0" style="min-width: 10px">id</th>
+                                                        <th style="min-width: 10px">Nom de L'Appareil</th>
+                                                        <th style="min-width: 10px">Ville</th>
+                                                        <th style="min-width: 10px">Direction</th>
+                                                        <th class="pr-0 text-right" style="min-width: 100px">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="pl-0 py-6">
+                                                            <label class="checkbox checkbox-lg checkbox-single">
+                                                                <input type="checkbox" value="1" />
+                                                                <span></span>
+                                                            </label>
+                                                        </td>
+                                                        <td class="pl-0">
+                                                            <a href="#" class="text-dark-75 font-weight-bolder text-hover-danger font-size-lg">1</a>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-dark-75 font-weight-bolder d-block font-size-lg">Bonandjo</span>	
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-dark-75 font-weight-bolder d-block font-size-lg">Douala</span>
+                                                            
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-dark-75 font-weight-bolder d-block font-size-lg">DSI</span>
+                                                        </td>
+                                                        <td class="pr-0 text-right">
+                                                            <!-- Button trigger modal-->
+                                                                <button type="button" class="btn btn-icon btn-light btn-hover-success btn-sm " data-toggle="modal" data-target="#exampleModalLong">																	
+                                                                <span class="svg-icon svg-icon-md svg-icon-success">
+                                                                    <!--begin::Svg Icon | path:assets/media/svg/icons/General/Settings-1.svg-->
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <rect x="0" y="0" width="24" height="24" />
+                                                                            <path d="M7,3 L17,3 C19.209139,3 21,4.790861 21,7 C21,9.209139 19.209139,11 17,11 L7,11 C4.790861,11 3,9.209139 3,7 C3,4.790861 4.790861,3 7,3 Z M7,9 C8.1045695,9 9,8.1045695 9,7 C9,5.8954305 8.1045695,5 7,5 C5.8954305,5 5,5.8954305 5,7 C5,8.1045695 5.8954305,9 7,9 Z" fill="#000000" />
+                                                                            <path d="M7,13 L17,13 C19.209139,13 21,14.790861 21,17 C21,19.209139 19.209139,21 17,21 L7,21 C4.790861,21 3,19.209139 3,17 C3,14.790861 4.790861,13 7,13 Z M17,19 C18.1045695,19 19,18.1045695 19,17 C19,15.8954305 18.1045695,15 17,15 C15.8954305,15 15,15.8954305 15,17 C15,18.1045695 15.8954305,19 17,19 Z" fill="#000000" opacity="0.3" />
+                                                                        </g>
+                                                                    </svg>
+                                                                    <!--end::Svg Icon-->
+                                                                </span>															
+                                                            </button>
+                                                            <!-- Modal-->
+                                                            <div class="modal fade" id="exampleModalLong" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
+                                                                <div class="modal-dialog" role="document">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <i aria-hidden="true" class="ki ki-close"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="modal-body text-left">
+                                                                            ... Hello
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-light-success font-weight-bold" data-dismiss="modal">Close</button>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>			
+
+                                                            <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                                                <span class="svg-icon svg-icon-md svg-icon-primary">
+                                                                    <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <rect x="0" y="0" width="24" height="24" />
+                                                                            <path d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)" />
+                                                                            <path d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                                        </g>
+                                                                    </svg>
+                                                                    <!--end::Svg Icon-->
+                                                                </span>
+                                                            </a>
+                                                            <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
+                                                                <span class="svg-icon svg-icon-md svg-icon-danger">
+                                                                    <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <rect x="0" y="0" width="24" height="24" />
+                                                                            <path d="M6,8 L6,20.5 C6,21.3284271 6.67157288,22 7.5,22 L16.5,22 C17.3284271,22 18,21.3284271 18,20.5 L18,8 L6,8 Z" fill="#000000" fill-rule="nonzero" />
+                                                                            <path d="M14,4.5 L14,4 C14,3.44771525 13.5522847,3 13,3 L11,3 C10.4477153,3 10,3.44771525 10,4 L10,4.5 L5.5,4.5 C5.22385763,4.5 5,4.72385763 5,5 L5,5.5 C5,5.77614237 5.22385763,6 5.5,6 L18.5,6 C18.7761424,6 19,5.77614237 19,5.5 L19,5 C19,4.72385763 18.7761424,4.5 18.5,4.5 L14,4.5 Z" fill="#000000" opacity="0.3" />
+                                                                        </g>
+                                                                    </svg>
+                                                                    <!--end::Svg Icon-->
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                   
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!--end::Table-->			
+								    </div>
+								<!--end::Row-->						
 								<!--end::Dashboard-->
 							</div>
 							<!--end::Container-->
@@ -513,6 +453,21 @@
 		</div>
 		<!-- end::User Panel-->
 		
+		<!--begin::Scrolltop-->
+		<div id="kt_scrolltop" class="scrolltop">
+			<span class="svg-icon">
+				<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Up-2.svg-->
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<polygon points="0 0 24 0 24 24 0 24" />
+						<rect fill="#000000" opacity="0.3" x="11" y="10" width="2" height="10" rx="1" />
+						<path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" fill="#000000" fill-rule="nonzero" />
+					</g>
+				</svg>
+				<!--end::Svg Icon-->
+			</span>
+		</div>
+		<!--end::Scrolltop-->
 		
 		<!--begin::Global Config(global config for global JS scripts)-->
 		<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "danger": "#8950FC", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "danger": "#E1E9FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "danger": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
@@ -529,59 +484,7 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/widgets.js"></script>
 		<!--end::Page Scripts-->
-		<script>
-			// Class definition
 
-			var KTBootstrapMultipleSelectsplitter = function () {
-
-			// Private functions
-			var demos = function () {
-			// minimum setup
-			$('#kt_multipleselectsplitter_1, #kt_multipleselectsplitter_2').multiselectsplitter();
-			}
-
-			return {
-			// public functions
-			init: function() {
-			demos();
-			}
-			};
-			}();
-
-			jQuery(document).ready(function() {
-			KTBootstrapMultipleSelectsplitter.init();
-			});
-		</script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-			const toggleSwitch = document.getElementById('toggleSwitch');
-			const switchLabel = document.getElementById('switchLabel');
-			const switchSpan = document.getElementById('switchSpan');
-
-			toggleSwitch.addEventListener('change', function() {
-				if (this.checked) {
-					switchLabel.textContent = 'Non-Fonctionnel';
-					switchSpan.classList.remove('switch-primary');
-					switchSpan.classList.add('switch-danger');
-				} else {
-					switchLabel.textContent = 'Fonctionnel';
-					switchSpan.classList.remove('switch-danger');
-					switchSpan.classList.add('switch-primary');
-				}
-			});
-
-    // Initial state setup
-    toggleSwitch.checked = true;
-    switchLabel.textContent = 'Non-Fonctionnel';
-    switchSpan.classList.add('switch-danger');
-});
-		</script>
-		<script>
-						// disabled mode
-			$('#kt_select2_7').select2({
-			placeholder: "Select an option"
-			});
-		</script>
 	</body>
 	<!--end::Body-->
 </html>

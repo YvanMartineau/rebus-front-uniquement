@@ -21,23 +21,7 @@
 		<!--begin::Layout Themes(used by all pages)-->
 		<!--end::Layout Themes-->
 		<link rel="shortcut icon" href="assets/media/logos/cropped-Icone_web-bn-32x32.png" />
-		<style>
-			.switch-icon span {
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			background-color: red;
-			transition: background-color 0.3s;
-		}
-
-		.switch-danger span {
-			background-color: red;
-		}
-
-		.switch-primary span {
-			background-color: green;
-		}
-			</style>
+	
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -58,7 +42,7 @@
 				</button>
 				<!--end::Aside Mobile Toggle-->
 				<!--begin::Header Menu Mobile Toggle-->
-				<h6 class="p-6">Gestion Rebus</h6>
+				<h6 class="p-6">XXX</h6>
 				</button>
 				<!--end::Header Menu Mobile Toggle-->
 				<!--begin::Topbar Mobile Toggle-->
@@ -102,13 +86,11 @@
 						<ul class="nav flex-column">
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Home">
-								<a href="index.html" class="nav-link btn btn-icon btn-text-danger btn-hover-bg-white btn-lg active">
-									<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    								<dotlottie-player src="https://lottie.host/428fa527-e86e-4a4c-a66c-9f16718be70a/pdSxfYHkX0.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></dotlottie-player>
-
+								<a href="index.html" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg">
+									<i class="flaticon2-protection icon-lg"></i>
 								</a>
 							</li>
+
 							<!--end::Item-->
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Les Rebus">
@@ -126,9 +108,8 @@
 							<!--end::Item-->
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Management">
-								<a href="menu/users.html" class="nav-link btn btn-icon btn-text-white btn-hover-text-white btn-lg">
-									<i class="flaticon2-avatar icon-lg"></i>
-								</a>
+								<a href="menu/users.html" class="nav-link btn btn-icon btn-text-danger btn-hover-bg-white btn-lg active">
+									<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/9cb392d6-05ad-4a60-aafe-fb22a428a4eb/vUySyFKWvw.json" background="##FFFFFF" speed="1" style="width: 30px; height: 30px" loop autoplay direction="1" mode="normal"></lottie-player></a>
 							</li>
 							<!--end::Item-->
 							<!--begin::Item-->
@@ -163,7 +144,7 @@
 										<!--begin::Header Nav-->
 										<ul class="menu-nav">
 											<li class="menu-item menu-item-active" aria-haspopup="true">
-												<h3 class="d-none d-lg-flex align-items-center mr-10 mb-0 text-white">Gestion Rebus</h3>
+												<h3 class="d-none d-lg-flex align-items-center mr-10 mb-0 text-white">Gestion Utilisateur</h3>
 											</li>
 											
 										</ul>
@@ -197,172 +178,23 @@
 					</div>
 					<!--end::Header-->
 					<!--begin::Content-->
-					<div class="content d-flex flex-column flex-column-fluid" id="kt_content" style="background-repeat: repeat; background-image: url(assets/media/bg/bg_global_afb.png);">
+					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+						<!--begin::Subheader-->
+						<div class="subheader py-5 py-lg-10 gutter-b subheader-transparent" id="kt_subheader" style="background-color: #888898; background-position: right bottom; background-size: auto 100%; background-repeat: no-repeat; background-image: url(assets/media/svg/shapes/abstract-2.svg)">
+							<div class="container d-flex flex-column">
+								
+							</div>
+						</div>
+						<!--end::Subheader-->
 						
 						<!--begin::Entry-->
-						<div class="d-flex flex-column-fluid m-5" >
+						<div class="d-flex flex-column-fluid">
 							<!--begin::Container-->
-							<div class="container" >
+							<div class="container">
 								<!--begin::Dashboard-->
-							<br>
 								<!--begin::Row-->
 								<div class="row">
-									
-									<div class="card card-custom col-xl-12">
-									<div class="card-header">
-									<h3 class="card-title">
-									Creation d'un Rebus
-									</h3>
-									</div>
-									<!--begin::Form-->
-									<form>
-									<div class="card-body">
-										<div class="form-group mb-8">
-											<div class="alert alert-custom alert-default" role="alert">
-											<div class="alert-icon"><i class="flaticon-responsive text-danger"></i></div>
-											<div class="alert-text">
-											Propriete Liee a L'Appareil
-											</div>
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-lg-2 col-form-label">Numero de Serie</label>
-											<div class="input-group col-lg-3 col-md-3 col-sm-8">
-											<div class="input-group-prepend"><span class="input-group-text">#</span></div>
-											<input type="text" class="form-control" placeholder="Numero de Series" />
-											</div>
-										
-											<div class="col-lg-1 col-sm-0"></div>
-											<label class="col-lg-1 col-form-label">Model</label>
-											<div class="col-lg-5 col-md-3 col-sm-8">
-											<input class="form-control" type="text" value="IX500" id="example-text-input"/>
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-form-label text-left col-lg-2 col-sm-12">Selectionner Appareil et la Raison de mise en Rebus</label>
-											<div class="col-lg-9 col-md-9 col-sm-12">
-											<select  multiple="" class="form-control" id="kt_multipleselectsplitter_1">
-											<optgroup label="All In One">
-											<option value="1">Manque d'espace</option>
-											<option value="2">RAM Endommager</option>
-											<option value="3">Pas de Disque Dur</option>
-											<option value="4">Voir Technicien</option>
-											</optgroup>
-											<optgroup label="Scanner">
-											<option value="5">Manque d'espace</option>
-											<option value="6">Ruban Endommager</option>
-											<option value="7">Voir Technicien</option>
 								
-											</optgroup>
-											<optgroup label="Cable Reseau">
-											<option value="5">Manque d'espace</option>
-											<option value="6">Voir Technicien</option>
-											<option value="7">Couper</option>
-											<option value="8">Non Fonctionnel</option>
-											</optgroup>
-											</select>
-											</div>
-										</div>
-										<div class="form-group mb-8">
-											<div class="alert alert-custom alert-default" role="alert">
-											<div class="alert-icon"><i class="flaticon-exclamation text-danger"></i></div>
-											<div class="alert-text">
-											Propriete Liee a L'Etat et Situation du Rebus
-											</div>
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-md-2 col-lg-2 col-sm-12 col-form-label" id="switchLabel">Non Fonctionnel</label>
-											<div class="col-md-2 col-lg-2 col-sm-12">
-												<span class="switch switch-outline switch-icon switch-danger" id="switchSpan">
-													<label>
-														<input type="checkbox" checked="checked" name="select" id="toggleSwitch"/>
-														<span></span>
-													</label>
-												</span>  
-											</div>                          
-										</div>
-										<div class="form-group row">
-											<label class="col-form-label text-left col-lg-2 col-sm-8">Situation</label>
-											<div class=" col-lg-4 col-md-8 col-sm-8">
-											<select class="form-control select2" id="kt_select2_7" disabled="disabled" name="param">
-											<option label="Label"></option>
-											
-											<option value="Rebus" selected>Rebus</option>
-											
-											<optgroup label="Vendu">
-											<option value="Vendu">Vendu</option>
-											
-											</optgroup>
-											<optgroup label="Remis en Service">
-											<option value="Remis en Service">Remis en Service</option>
-											</optgroup>
-											
-											</select>
-											</div>
-										</div>
-										<div class="form-group mb-8">
-											<div class="alert alert-custom alert-default" role="alert">
-											<div class="alert-icon"><i class="flaticon-placeholder text-danger"></i></div>
-											<div class="alert-text">
-											Propriete Liee a L'Agence et Au Service de Provenance du Rebus
-											</div>
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="col-form-label col-lg-1 col-sm-12">Ville</label>
-											<div class="col-lg-4 col-md-9 col-sm-12">
-											<select class="form-control selectpicker" data-header="Selectionner la ville de Provenance">
-											<option data-subtext="Littoral">Douala</option>
-											<option data-subtext="Yaounde">Yaounde</option>
-											<option data-subtext="Bafoussam">Bafoussam</option>
-											</select>
-											</div>
-											<div class="col-lg-1 col-md-1 col-sm-0"></div>
-											<label class="col-form-label col-lg-1 col-sm-12">Agence</label>
-											<div class="col-lg-5 col-md-5 col-sm-12">
-												<select class="form-control selectpicker" data-size="7" data-live-search="true">
-												<option value="">Select</option>
-												<option value="AF">Akwa</option>
-												<option value="AX">Bonandjo</option>
-												<option value="AL">Millenium</option>
-												</select>
-											</div>
-										</div>									
-										<div class="form-group row">
-											<label class="col-form-label col-lg-1 col-sm-12">Service</label>
-											<div class="col-lg-4 col-md-9 col-sm-12">
-											<select class="form-control selectpicker" data-size="7" data-live-search="true">
-											<option value="">Selectionner un service</option>
-											<option value="AF">Direction Service Informatique</option>
-											<option value="AX">Serive Monetaire</option>
-											<option value="AL">Acceuil</option>
-											<option value="DZ">Caisse</option>
-											<option value="AS">Coffre</option>
-											<option value="AD">Sous-Sol</option>
-											<option value="AO">Operation locales</option>
-											<option value="AI">Operation Internationales</option>
-											<option value="AQ">Securite</option>
-											<option value="AG">Courrier</option>
-											<option value="AR">Service Contentieux</option>
-											<option value="AM">Moyen Generaux</option>
-											<option value="AW">Leasing</option>
-											<option value="AU">Gestionnaire PME</option>
-											</select>
-										</div>
-									</div>
-									<div class="card-footer">
-										<div class="row">
-											<div class="col-2">
-											</div>
-											<div class="col-10">
-											<button type="submit" class="btn btn-success mr-2">Enregistrer</button>
-											<button type="reset" class="btn btn-secondary">Cancel</button>
-											</div>
-										</div>
-									</div>
-									</form>
-									</div>
 								</div>
 								<!--end::Row-->
 								
@@ -513,6 +345,21 @@
 		</div>
 		<!-- end::User Panel-->
 		
+		<!--begin::Scrolltop-->
+		<div id="kt_scrolltop" class="scrolltop">
+			<span class="svg-icon">
+				<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Up-2.svg-->
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<polygon points="0 0 24 0 24 24 0 24" />
+						<rect fill="#000000" opacity="0.3" x="11" y="10" width="2" height="10" rx="1" />
+						<path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" fill="#000000" fill-rule="nonzero" />
+					</g>
+				</svg>
+				<!--end::Svg Icon-->
+			</span>
+		</div>
+		<!--end::Scrolltop-->
 		
 		<!--begin::Global Config(global config for global JS scripts)-->
 		<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "danger": "#8950FC", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "danger": "#E1E9FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "danger": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
@@ -529,59 +376,7 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/widgets.js"></script>
 		<!--end::Page Scripts-->
-		<script>
-			// Class definition
 
-			var KTBootstrapMultipleSelectsplitter = function () {
-
-			// Private functions
-			var demos = function () {
-			// minimum setup
-			$('#kt_multipleselectsplitter_1, #kt_multipleselectsplitter_2').multiselectsplitter();
-			}
-
-			return {
-			// public functions
-			init: function() {
-			demos();
-			}
-			};
-			}();
-
-			jQuery(document).ready(function() {
-			KTBootstrapMultipleSelectsplitter.init();
-			});
-		</script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-			const toggleSwitch = document.getElementById('toggleSwitch');
-			const switchLabel = document.getElementById('switchLabel');
-			const switchSpan = document.getElementById('switchSpan');
-
-			toggleSwitch.addEventListener('change', function() {
-				if (this.checked) {
-					switchLabel.textContent = 'Non-Fonctionnel';
-					switchSpan.classList.remove('switch-primary');
-					switchSpan.classList.add('switch-danger');
-				} else {
-					switchLabel.textContent = 'Fonctionnel';
-					switchSpan.classList.remove('switch-danger');
-					switchSpan.classList.add('switch-primary');
-				}
-			});
-
-    // Initial state setup
-    toggleSwitch.checked = true;
-    switchLabel.textContent = 'Non-Fonctionnel';
-    switchSpan.classList.add('switch-danger');
-});
-		</script>
-		<script>
-						// disabled mode
-			$('#kt_select2_7').select2({
-			placeholder: "Select an option"
-			});
-		</script>
 	</body>
 	<!--end::Body-->
 </html>
