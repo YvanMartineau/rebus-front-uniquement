@@ -42,7 +42,7 @@
 				</button>
 				<!--end::Aside Mobile Toggle-->
 				<!--begin::Header Menu Mobile Toggle-->
-				<h6 class="p-6">AGENCE</h6>
+				<h6 class="p-6">Appareil</h6>
 				</button>
 				<!--end::Header Menu Mobile Toggle-->
 				<!--begin::Topbar Mobile Toggle-->
@@ -115,10 +115,9 @@
 							<!--end::Item-->
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Settings">
-								<a href="menu/settings.html" class="nav-link btn btn-icon btn-text-danger btn-hover-bg-white btn-lg active" >   
+								<a href="menu/settings.html" class="nav-link btn btn-icon btn-text-danger btn-hover-bg-white btn-lg active">   
 									<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    <dotlottie-player src="https://lottie.host/9cb392d6-05ad-4a60-aafe-fb22a428a4eb/vUySyFKWvw.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></dotlottie-player>
+										<dotlottie-player src="https://lottie.host/c1639838-3823-4361-ad56-f51a90837b1e/EXGlf3XUou.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></dotlottie-player>
 								</a>
 							</li>
 							<!--end::Item-->
@@ -147,7 +146,7 @@
 										<!--begin::Header Nav-->
 										<ul class="menu-nav">
 											<li class="menu-item menu-item-active" aria-haspopup="true">
-												<h3 class="d-none d-lg-flex align-items-center mr-10 mb-0 text-white">AGENCE</h3>
+												<h3 class="d-none d-lg-flex align-items-center mr-10 mb-0 text-white">Appareil</h3>
 											</li>
 											
 										</ul>
@@ -193,7 +192,7 @@
                             
 							<!--begin::Container-->
 							<div class="container">
-                                <a class="btn btn-danger btn-bg-hover-secondary btn-text-white" href="crud_display/agence.html">Retour</a>
+                                <a class="btn btn-danger btn-bg-hover-secondary btn-text-white" href="crud_display/device.html">Retour</a>
 								
                                 <!--begin::Dashboard-->
                                 <br>
@@ -204,7 +203,7 @@
 									<div class="card card-custom col-xl-12">
 									<div class="card-header">
 									<h3 class="card-title">
-									Creation d'une Agence
+									Creation d'un Appareil
 									</h3>
 									</div>
 									<!--begin::Form-->
@@ -215,38 +214,24 @@
 											<div class="col-lg-0 col-sm-0"></div>
 											<label class="col-lg-1 col-form-label">Nom</label>
 											<div class="col-lg-10 col-md-10 col-sm-10">
-											<input class="form-control" type="text" placeholder="Entrez le nom de l'agence" id="example-text-input"/>
+											<input class="form-control" type="text" placeholder="Entrez le nom de l'Appareil" id="example-text-input"/>
 											</div>
 										</div>
 										
 										<div class="form-group row">
-											<label class="col-form-label col-lg-1 col-sm-12">Ville</label>
+											<label class="col-form-label col-lg-1 col-sm-12">Model</label>
 											<div class="col-lg-4 col-md-9 col-sm-12">
-											<select class="form-control selectpicker" data-header="Selectionner la ville de Provenance">
-											<option data-subtext="Littoral">Douala</option>
-											<option data-subtext="Yaounde">Yaounde</option>
-											<option data-subtext="Bafoussam">Bafoussam</option>
-											</select>
+											<input class="form-control" type="text" placeholder="Entrez le nom du model de l'Appareil" id="example-text-input"/>
 											</div>
 											<div class="col-lg-1 col-md-1 col-sm-0"></div>
-											<label class="col-form-label col-lg-1 col-sm-12">Direction</label>
+											<label class="col-form-label col-lg-1 col-sm-12">Panne</label>
 											<div class="col-lg-5 col-md-5 col-sm-12">
 												<select multiple="" id="exampleSelect2" class="form-control selectpicker" data-size="7" data-live-search="true">
                                                 <option value="">Selectionner un service</option>
-                                                <option value="AF">Direction Service Informatique</option>
-                                                <option value="AX">Serive Monetaire</option>
-                                                <option value="AL">Acceuil</option>
-                                                <option value="DZ">Caisse</option>
-                                                <option value="AS">Coffre</option>
-                                                <option value="AD">Sous-Sol</option>
-                                                <option value="AO">Operation locales</option>
-                                                <option value="AI">Operation Internationales</option>
-                                                <option value="AQ">Securite</option>
-                                                <option value="AG">Courrier</option>
-                                                <option value="AR">Service Contentieux</option>
-                                                <option value="AM">Moyen Generaux</option>
-                                                <option value="AW">Leasing</option>
-                                                <option value="AU">Gestionnaire PME</option>
+                                                <option value="AF">Ruban Endommager</option>
+                                                <option value="AX">RAM endommager</option>
+                                                <option value="AL">Plus d'espace</option>
+                                                <option value="DZ">Voir Technicien</option>
                                                 </select>
 											</div>
 										</div>									
