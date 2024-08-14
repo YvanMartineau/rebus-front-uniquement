@@ -275,19 +275,59 @@
 										<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 											<div class="modal-dialog" role="document">
 												<div class="modal-content">
+
 													<div class="modal-header">
-														<h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+														<h5 class="modal-title" id="exampleModalLabel">Cree un nouvel appareil</h5>
 														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 															<i aria-hidden="true" class="ki ki-close"></i>
 														</button>
 													</div>
 													<div class="modal-body">
-														<!-- Your modal content goes here -->
-														...
+														<form class="form" id="kt_form">
+															<div class="row justify-content-center">
+																<div class="col-xl-9">
+																	<!--begin::Wizard Step 1-->
+																	
+																		<!--begin::Group-->
+																		<div class="form-group row">
+																			<label class="col-xl-3 col-lg-3 col-form-label">Nom</label>
+																			<div class="col-lg-9 col-xl-9">
+																				<input class="form-control form-control-solid form-control-lg" name="firstname" type="text" value="" />
+																			</div>
+																		</div>
+																		<!--end::Group-->
+																		<!--begin::Group-->
+																		<div class="form-group row">
+																			<label class="col-xl-3 col-lg-3 col-form-label">Model</label>
+																			<div class="col-lg-9 col-xl-9">
+																				<input class="form-control form-control-solid form-control-lg" name="model" type="text" value="" />
+																			</div>
+																		</div>
+																		<!--end::Group-->
+																		<!--begin::Group-->
+																		<div class="form-group row">
+																			<label class="col-xl-3 col-lg-3 col-form-label">Panne associer</label>
+																			<div class="col-lg-9 col-xl-9">
+																				<select multiple="" id="exampleSelect2" class="form-control selectpicker" data-size="7" data-live-search="true">
+																				<option value="">Selectionner un service</option>
+																				<option value="AF">Ruban Endommager</option>
+																				<option value="AX">RAM endommager</option>
+																				<option value="AL">Plus d'espace</option>
+																				<option value="DZ">Voir Technicien</option>
+																				</select>
+																			</div>
+																		</div>
+																		<!--end::Group-->
+																		
+																	<!--end::Wizard Step 1-->
+																	
+																</div>
+															</div>
+<br>														</form>
 													</div>
 													<div class="modal-footer">
-														<button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Close</button>
-														<button type="button" class="btn btn-primary font-weight-bold">Save changes</button>
+														<button type="reset" class="btn btn-light-secondary font-weight-bold text-black-50" data-dismiss="modal">Close</button>
+														<button type="submit" class="btn btn-success font-weight-bold">Sauvergarde</button>
 													</div>
 												</div>
 											</div>
