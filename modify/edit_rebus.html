@@ -21,7 +21,18 @@
 		<!--begin::Layout Themes(used by all pages)-->
 		<!--end::Layout Themes-->
 		<link rel="shortcut icon" href="assets/media/logos/cropped-Icone_web-bn-32x32.png" />
-	
+        <style>
+        #dynamicFields {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s ease-out, opacity 1s ease-out;
+            opacity: 0;
+        }
+        #dynamicFields.show {
+            max-height: 300px; /* Adjust this value based on your content */
+            opacity: 1;
+        }
+        </style>
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -42,7 +53,7 @@
 				</button>
 				<!--end::Aside Mobile Toggle-->
 				<!--begin::Header Menu Mobile Toggle-->
-				<h6 class="p-6">XXX</h6>
+				<h6 class="p-6">Gestion Rebus</h6>
 				</button>
 				<!--end::Header Menu Mobile Toggle-->
 				<!--begin::Topbar Mobile Toggle-->
@@ -180,253 +191,184 @@
 					</div>
 					<!--end::Header-->
 					<!--begin::Content-->
-					<div class="content d-flex flex-column flex-column-fluid" id="kt_content"  style="background-repeat: repeat; background-image: url(assets/media/bg/bg_global_afb.png);">
+					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 						<!--begin::Subheader-->
-						<div class="subheader py-5 py-lg-10 gutter-b subheader-transparent" id="kt_subheader" style="background-color: #888898; background-position: right bottom; background-size: auto 100%; background-repeat: no-repeat; background-image: url(assets/media/svg/shapes/abstract-1.svg)">
-							<div class="container d-flex flex-column">
-								<!--begin::Subheader-->
 						<div class="subheader py-2 py-lg-4 subheader-transparent" id="kt_subheader">
 							<div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
 								<!--begin::Details-->
 								<div class="d-flex align-items-center flex-wrap mr-2">
 									<!--begin::Title-->
-									<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Rebus</h5>
+									<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Modifier Rebus</h5>
 									<!--end::Title-->
 									<!--begin::Separator-->
 									<div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-5 bg-gray-200"></div>
 									<!--end::Separator-->
-									<!--begin::Search Form-->
-									<div class="d-flex align-items-center" id="kt_subheader_search">
-										<span class="text-dark-100 font-weight-bold" id="kt_subheader_total">5 Total</span>
-										<form class="ml-5">
-											<div class="input-group input-group-sm input-group-solid" style="max-width: 175px">
-												<input type="text" class="form-control" id="kt_subheader_search_form" placeholder="Rechercher..." />
-												<div class="input-group-append">
-													<span class="input-group-text">
-														<span class="svg-icon">
-															<!--begin::Svg Icon | path:assets/media/svg/icons/General/Search.svg-->
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24" />
-																	<path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-																	<path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero" />
-																</g>
-															</svg>
-															<!--end::Svg Icon-->
-														</span>
-														<!--<i class="flaticon2-search-1 icon-sm"></i>-->
-													</span>
-												</div>
-											</div>
-										</form>
-									</div>
-									<!--end::Search Form-->
-									
 								</div>
 								<!--end::Details-->
-								<!--begin::Toolbar-->
-								<div class="d-flex align-items-center">
-									
-									<!--begin::Button-->
-									<a href="forms/create_rebus.html" class="btn btn-light-primary font-weight-bold btn-sm px-5 font-size-base ml-2">Ajouter un Rebus</a>
-									<!--end::Button-->
-									
-								</div>
-								<!--end::Toolbar-->
 							</div>
 						</div>
 						<!--end::Subheader-->
-							</div>
-						</div>
-						<!--end::Subheader-->
-						
 						<!--begin::Entry-->
 						<div class="d-flex flex-column-fluid">
 							<!--begin::Container-->
 							<div class="container">
-								<!--begin::Dashboard-->
-								<!--begin::Row-->
+                                <!--begin::Row-->
 								<div class="row">
-									<!--begin::Content-->
-					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-						
-						<!--begin::Entry-->
-						<div class="d-flex flex-column-fluid">
-							<!--begin::Container-->
-							<div class="container">
-								<!--begin::Row-->
-								<div class="row">
-									<!--begin::Col-->
-									<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+									<div class="col-xl-10">
 										<!--begin::Card-->
-										<div class="card card-custom gutter-b card-stretch ribbon ribbon-clip ribbon-left">
-											<div class="ribbon-target" style="top: 12px;">
-												<span class="ribbon-inner bg-success"></span>Fonctionnel
+										<div class="card card-custom">
+											<!--begin::Header-->
+											<div class="card-header h-auto py-4">
+												<div class="card-title">
+													<h3 class="card-label">Informations</h3>
+												</div>
 											</div>
+											<!--end::Header-->
 											<!--begin::Body-->
-											<div class="card-body pt-4">
-												<!--begin::User-->
-												<br>
-												<br>
-												<div class="d-flex align-items-end mb-7">
-													<!--begin::Pic-->
-													<div class="d-flex align-items-center">
-														<!--begin::Pic-->
-														<div class="flex-shrink-0 mr-4 mt-lg-0 mt-3">
-															<div class="symbol symbol-circle symbol-lg-75">
-																<img src="assets/media/devices/printer.webp" alt="image" />
-															</div>
-														</div>
-														<!--end::Pic-->
-														<!--begin::Title-->
-														<div class="d-flex flex-column">
-															<a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">Imprimante</a>
-															<span class="text-muted font-weight-bold">#124ABc455</span>
-														</div>
-														<!--end::Title-->
+											<div class="card-body py-4 pl-30">
+												<div class="form-group row my-2">
+													<label class="col-5 col-form-label">Numero de Serie:</label>
+													<div class="col-7">
+											            <input type="text" class="form-control" placeholder="Numero de Series" />
 													</div>
-													<!--end::Title-->
 												</div>
-												<!--end::User-->
+												<div class="form-group row my-2">
+													<label class="col-5 col-form-label">Model:</label>
+													<div class="col-7">
+														<select class="form-control selectpicker" data-size="7" data-live-search="true">
+                                                            <option value="">IX500</option>
+                                                            <option value="AF">S1500</option>
+                                                            <option value="AX">Hp LaserJet</option>
+                                                        </select>
+													</div>
+												</div>
+												<div class="form-group row my-2">
+													<label class="col-5 col-form-label">Type d'appareil</label>
+													<div class="col-7">
+														<select class="form-control selectpicker" data-size="7" data-live-search="true">
+                                                            <option value="">All in One</option>
+                                                            <option value="AF">Scanner</option>
+                                                            <option value="AX">Cable Reseau</option>
+                                                        </select>	
+													</div>
+												</div>
+												<div class="form-group row my-2">
+													<label class="col-5 col-form-label">Raison de mise en Rebus:</label>
+													<div class="col-7">
+														<select multiple="" id="exampleSelect2" class="form-control selectpicker" data-size="7" data-live-search="true">
+                                                        <option value="">Selectionner un service</option>
+                                                        <option value="AF">Ruban Endommager</option>
+                                                        <option value="AX">RAM endommager</option>
+                                                        <option value="AL">Plus d'espace</option>
+                                                        <option value="DZ">Voir Technicien</option>
+                                                        </select>
+													</div>
+												</div>
+												<div class="form-group row my-2">
+													<label class="col-5 col-form-label">Fonctionalite:</label>
+													<div class="col-7">
+														<select class="form-control">
+                                                            <option value="">Fonctionnel</option>
+                                                            <option value="AF">Non-Fonctionnel</option>
+                                                        </select>
+													</div>
+												</div>
+                                                <div class="form-group row my-2">
+                                                    <label class="col-5 col-form-label">Situation:</label>
+                                                    <div class="col-7">
+                                                        <select class="form-control" id="situationSelect">
+                                                            <option selected value="Rebus">Rebus</option>
+                                                            <option value="Remis en service">Remis en service</option>
+                                                            <option value="Vendu">Vendu</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <!-- HIDDEN FIELDS-->
+                                                <div id="dynamicFields">
+                                                    <div class="form-group row my-2">
+                                                        <label class="col-5 col-form-label" id="dynamicLabel1"></label>
+                                                        <div class="col-7" id="dynamicField1">
+                                                            <!-- Input will be dynamically inserted here -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row my-2">
+                                                        <label class="col-5 col-form-label" id="dynamicLabel2"></label>
+                                                        <div class="col-7" id="dynamicField2">
+                                                            <!-- Input will be dynamically inserted here -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- END: HIDDEN FIELDS-->
+                                                <div class="form-group row my-2">
+													<label class="col-5 col-form-label">Agence de Provenance:</label>
+													<div class="col-7">
+                                                        <select class="form-control selectpicker" data-size="7" data-live-search="true">
+                                                            <option value="">Select</option>
+                                                            <option value="AF">Akwa</option>
+                                                            <option value="AX">Bonandjo</option>
+                                                            <option value="AL">Millenium</option>
+                                                        </select>
+                                                    </div>
+												</div>
+                                                <div class="form-group row my-2">
+													<label class="col-5 col-form-label">Service:</label>
+													<div class="col-7">
+														<select class="form-control selectpicker" data-size="7" data-live-search="true">
+                                                            <option value="">Selectionner un service</option>
+                                                            <option value="AF">Direction Service Informatique</option>
+                                                            <option value="AX">Serive Monetaire</option>
+                                                            <option value="AL">Acceuil</option>
+                                                            <option value="DZ">Caisse</option>
+                                                            <option value="AS">Coffre</option>
+                                                            <option value="AD">Sous-Sol</option>
+                                                            <option value="AO">Operation locales</option>
+                                                            <option value="AI">Operation Internationales</option>
+                                                            <option value="AQ">Securite</option>
+                                                            <option value="AG">Courrier</option>
+                                                            <option value="AR">Service Contentieux</option>
+                                                            <option value="AM">Moyen Generaux</option>
+                                                            <option value="AW">Leasing</option>
+                                                            <option value="AU">Gestionnaire PME</option>
+                                                        </select>
+													</div>
+												</div>
+												<div class="form-group row my-2">
+													<label class="col-5 col-form-label">Agence d'Emplacement:</label>
+													<div class="col-7">
+														<select class="form-control selectpicker" data-size="7" data-live-search="true">
+                                                            <option value="">Select</option>
+                                                            <option value="AF">Akwa</option>
+                                                            <option value="AX">Bonandjo</option>
+                                                            <option value="AL">Millenium</option>
+                                                        </select>	
+													</div>
+												</div>
+												<div class="form-group row my-2">
+													<label class="col-5 col-form-label">Position Exacte:</label>
+													<div class="col-7">
+														<select class="form-control selectpicker" data-live-search="true">
+                                                            <option value="">A1</option>
+                                                            <option value="AF">A2</option>
+                                                            <option value="AX">B1</option>
+                                                            <option value="AL">B2</option>
+                                                        </select>
+													</div>
+												</div>
 												
-												<!--begin::Info-->
-												<div class="mb-7">
-													<div class="d-flex justify-content-between align-items-center">
-														<span class="text-dark-75 font-weight-bolder mr-2">Model:</span>
-														<span class="text-muted font-weight-bold">HP LaserJet M402</span>
-													</div>
-													<div class="d-flex justify-content-between align-items-cente my-1">
-														<span class="text-dark-75 font-weight-bolder mr-2">Agence:</span>
-														<span class="text-muted font-weight-bold">Deido</span>
-													</div>
-													<div class="d-flex justify-content-between align-items-center">
-														<span class="text-dark-75 font-weight-bolder mr-2">Emplacement:</span>
-														<span class="text-muted font-weight-bold">Bonandjo, A1</span>
-													</div>
-												</div>
-												<!--end::Info-->
-												<!--begin::Buttons-->
-												<div class="mt-3 mb-3 ml-5">
-													<a href="crud_display/rebus.html" class="btn btn-md btn-icon btn-light-success btn-pill mx-2">
-														<i class="la la-check-square-o"></i>
-													</a>
-													<a href="modify/edit_rebus.html" class="btn btn-md btn-icon btn-light-primary btn-pill mx-2">
-														<i class="la la-pencil-square-o"></i>
-													</a>
-													<a href="#" class="btn btn-md btn-icon btn-light-danger btn-pill mx-2">
-														<i class="la la-trash-o"></i>
-													</a>
-												</div>
-												<!--end::Buttons-->
 											</div>
 											<!--end::Body-->
+                                            <!--begin::Footer-->
+											<div class="card-footer h-auto py-4">
+												<div class="text-right">
+													<button type="submit" class="btn btn-success mr-2">Enregistrer</button>
+												</div>
+											</div>
+											<!--end::Footer-->
 										</div>
 										<!--end::Card-->
 									</div>
-									<!--end::Col-->
-									<!--begin::Col-->
-									<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-										<!--begin::Card-->
-										<div class="card card-custom gutter-b card-stretch ribbon ribbon-clip ribbon-left">
-											<div class="ribbon-target" style="top: 12px;">
-												<span class="ribbon-inner bg-danger"></span>Non-Fonctionnel
-											</div>
-											<!--begin::Body-->
-											<div class="card-body pt-4">
-												<!--begin::User-->
-												<br>
-												<br>
-												<div class="d-flex align-items-end mb-7">
-													<!--begin::Pic-->
-													<div class="d-flex align-items-center">
-														<!--begin::Pic-->
-														<div class="flex-shrink-0 mr-4 mt-lg-0 mt-3">
-															<div class="symbol symbol-circle symbol-lg-75">
-																<img src="assets/media/devices/scan.jpeg" alt="image" />
-															</div>
-														</div>
-														<!--end::Pic-->
-														<!--begin::Title-->
-														<div class="d-flex flex-column">
-															<a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">Scanner</a>
-															<span class="text-muted font-weight-bold">#145CC5</span>
-														</div>
-														<!--end::Title-->
-													</div>
-													<!--end::Title-->
-												</div>
-												<!--end::User-->
-												
-												<!--begin::Info-->
-												<div class="mb-7">
-													<div class="d-flex justify-content-between align-items-center">
-														<span class="text-dark-75 font-weight-bolder mr-2">Model:</span>
-														<span class="text-muted font-weight-bold">iX500</span>
-													</div>
-													<div class="d-flex justify-content-between align-items-cente my-1">
-														<span class="text-dark-75 font-weight-bolder mr-2">Agence:</span>
-														<span class="text-muted font-weight-bold">Mimboman</span>
-													</div>
-													<div class="d-flex justify-content-between align-items-center">
-														<span class="text-dark-75 font-weight-bolder mr-2">Emplacement:</span>
-														<span class="text-muted font-weight-bold">Hippodrome, B4</span>
-													</div>
-												</div>
-												<!--end::Info-->
-												<!--begin::Buttons-->
-												<div class="mt-3 mb-3 ml-5">
-													<a href="#" class="btn btn-md btn-icon btn-light-success btn-pill mx-2">
-														<i class="la la-check-square-o"></i>
-													</a>
-													<a href="#" class="btn btn-md btn-icon btn-light-primary btn-pill mx-2">
-														<i class="la la-pencil-square-o"></i>
-													</a>
-													<a href="#" class="btn btn-md btn-icon btn-light-danger btn-pill mx-2">
-														<i class="la la-trash-o"></i>
-													</a>
-												</div>
-												<!--end::Buttons-->
-											</div>
-											<!--end::Body-->
-										</div>
-										<!--end::Card-->
-									</div>
-									<!--end::Col-->
 								</div>
 								<!--end::Row-->
-								
-								<!--begin::Pagination-->
-								<div class="d-flex justify-content-between align-items-center flex-wrap">
-									<div class="d-flex flex-wrap mr-3">
-										<a href="#" class="btn btn-icon btn-sm btn-light-danger mr-2 my-1">
-											<i class="ki ki-bold-double-arrow-back icon-xs"></i>
-										</a>
-										<a href="#" class="btn btn-icon btn-sm btn-light-danger mr-2 my-1">
-											<i class="ki ki-bold-arrow-back icon-xs"></i>
-										</a>
-										<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-danger active mr-2 my-1">1</a>
-										<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-danger mr-2 my-1">2</a>
-										<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-danger mr-2 my-1">3</a>
-										<a href="#" class="btn btn-icon btn-sm btn-light-danger mr-2 my-1">
-											<i class="ki ki-bold-arrow-next icon-xs"></i>
-										</a>
-										<a href="#" class="btn btn-icon btn-sm btn-light-danger mr-2 my-1">
-											<i class="ki ki-bold-double-arrow-next icon-xs"></i>
-										</a>
-									</div>
-								
-								</div>
-								<!--end::Pagination-->
-							</div>
-							<!--end::Container-->
-						</div>
-						<!--end::Entry-->
-					</div>
-					<!--end::Content-->
-								</div>
-								<!--end::Row-->
-								
-								<!--end::Dashboard-->
 							</div>
 							<!--end::Container-->
 						</div>
@@ -604,7 +546,82 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/widgets.js"></script>
 		<!--end::Page Scripts-->
+        
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const situationSelect = document.getElementById('situationSelect');
+            const dynamicFields = document.getElementById('dynamicFields');
+            const dynamicLabel1 = document.getElementById('dynamicLabel1');
+            const dynamicLabel2 = document.getElementById('dynamicLabel2');
+            const dynamicField1 = document.getElementById('dynamicField1');
+            const dynamicField2 = document.getElementById('dynamicField2');
 
+            const agenceOptions = [
+                {value: '', text: 'Sélectionnez une agence'},
+                {value: 'AK', text: 'Akwa'},
+                {value: 'BO', text: 'Bonandjo'},
+                {value: 'MI', text: 'Millenium'},
+                {value: 'DO', text: 'Douala'},
+                {value: 'YA', text: 'Yaoundé'}
+            ];
+
+            const serviceOptions = [
+                {value: '', text: 'Sélectionnez un service'},
+                {value: 'IT', text: 'IT'},
+                {value: 'HR', text: 'Ressources Humaines'},
+                {value: 'FI', text: 'Finance'},
+                {value: 'MK', text: 'Marketing'},
+                {value: 'SA', text: 'Ventes'}
+            ];
+
+            function populateSelect(selectElement, options) {
+                selectElement.innerHTML = '';
+                options.forEach(option => {
+                    const optionElement = document.createElement('option');
+                    optionElement.value = option.value;
+                    optionElement.textContent = option.text;
+                    selectElement.appendChild(optionElement);
+                });
+            }
+
+            situationSelect.addEventListener('change', function() {
+                dynamicField1.innerHTML = ''; // Clear the field
+                dynamicField2.innerHTML = ''; // Clear the field
+
+                if (this.value === 'Vendu') {
+                    dynamicFields.classList.add('show');
+                    dynamicLabel1.textContent = 'A qui?';
+                    dynamicLabel2.textContent = 'A combien?';
+
+                    const input1 = document.createElement('input');
+                    input1.type = 'text';
+                    input1.className = 'form-control';
+                    dynamicField1.appendChild(input1);
+
+                    const input2 = document.createElement('input');
+                    input2.type = 'number';
+                    input2.className = 'form-control';
+                    dynamicField2.appendChild(input2);
+                } else if (this.value === 'Remis en service') {
+                    dynamicFields.classList.add('show');
+                    dynamicLabel1.textContent = 'Agence';
+                    dynamicLabel2.textContent = 'Service';
+
+                    const select1 = document.createElement('select');
+                    select1.className = 'form-control';
+                    populateSelect(select1, agenceOptions);
+                    dynamicField1.appendChild(select1);
+
+                    const select2 = document.createElement('select');
+                    select2.className = 'form-control';
+                    populateSelect(select2, serviceOptions);
+                    dynamicField2.appendChild(select2);
+                } else {
+                    dynamicFields.classList.remove('show');
+                }
+            });
+        });
+    </script>
 	</body>
 	<!--end::Body-->
 </html>
