@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Table Filter</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Filter Table</h2>
+    <!--begin::Search Bar-->
+    <div class="d-flex align-items-md-center mb-2 flex-column flex-md-row">
+      <div class="bg-white rounded p-4 d-flex flex-grow-1 flex-sm-grow-0">
+        <!--begin::Form-->
+        <form class="kt-form kt-form--fit mb-15" id="filterForm">
+          <div class="row mb-6">
+            <div class="col-lg-2 mb-lg-0 mb-6">
+              <label>No de serie:</label>
+              <input
+                type="text"
+                class="form-control datatable-input"
+                id="noDeSerie"
+                placeholder="E.g: 4590"
+              />
+            </div>
+            <div class="col-lg-2 mb-lg-0 mb-6">
+              <label>Appareil:</label>
+              <select class="form-control datatable-input" id="appareil">
+                <option value="">Select</option>
+                <option value="Imprimante">Imprimante</option>
+                <option value="Scanner">Scanner</option>
+                <option value="All In One">All In One</option>
+              </select>
+            </div>
+            <div class="col-lg-2 mb-lg-0 mb-6">
+              <label>Agence:</label>
+              <select class="form-control datatable-input" id="agence">
+                <option value="">Select</option>
+                <option value="Bonandjo">Bonandjo</option>
+                <option value="Agence de Deido">Agence de Deido</option>
+              </select>
+            </div>
+            <div class="col-lg-2 mb-lg-0 mb-6">
+              <label>Direction:</label>
+              <select class="form-control datatable-input" id="direction">
+                <option value="">Select</option>
+                <option value="DSI">DSI</option>
+                <option value="Acceuil">Acceuil</option>
+              </select>
+            </div>
+            <div class="col-lg-2 mb-lg-0 mb-6">
+              <label>Situation:</label>
+              <select class="form-control datatable-input" id="situation">
+                <option value="">Select</option>
+                <option value="Rebus">Rebus</option>
+                <option value="Remis en Service">Remis en Service</option>
+              </select>
+            </div>
+            <div class="col-lg-3 mb-lg-0 mb-6">
+              <label>Date (De - A):</label>
+              <div class="input-daterange input-group">
+                <input
+                  type="date"
+                  class="form-control datatable-input"
+                  id="startDate"
+                  name="start"
+                  placeholder="De"
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text">to</span>
+                </div>
+                <input
+                  type="date"
+                  class="form-control datatable-input"
+                  id="endDate"
+                  name="end"
+                  placeholder="A"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-8">
+            <div class="col-lg-12">
+              <button
+                type="button"
+                class="btn btn-danger btn-danger--icon"
+                id="kt_search"
+              >
+                <span><i class="la la-search"></i> <span>Search</span></span>
+              </button>
+              &#160;&#160;
+              <button
+                type="button"
+                class="btn btn-secondary btn-secondary--icon"
+                id="kt_reset"
+              >
+                <span><i class="la la-close"></i> <span>Reset</span></span>
+              </button>
+            </div>
+          </div>
+        </form>
+        <!--end::Form-->
+      </div>
+    </div>
+    <!--end::Search Bar-->
+
+    <div class="card-body">
+      <!--begin: Datatable-->
+      <table
+        class="table table-separate table-head-custom table-checkable"
+        id="kt_datatable1"
+      >
+        <thead>
+          <tr>
+            <th>No de serie</th>
+            <th>Appareil</th>
+            <th>Provenance</th>
+            <th>Direction</th>
+            <th>Etat</th>
+            <th>Raison de mise en rebus</th>
+            <th>Date</th>
+            <th>Situation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>64616-103</td>
+            <td>Imprimante</td>
+            <td>Bonandjo</td>
+            <td>DSI</td>
+            <td>
+              <span class="label label-lg label-light-danger label-inline"
+                >Non Fonctionnel</span
+              >
+            </td>
+            <td>Ruban Endommage</td>
+            <td>2024-07-29</td>
+            <td>
+              <span class="label label-lg label-light-danger label-inline"
+                >Rebus</span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>646a3</td>
+            <td>Scanner</td>
+            <td>Agence de Deido</td>
+            <td>Acceuil</td>
+            <td>
+              <span class="label label-lg label-light-danger label-inline"
+                >Non Fonctionnel</span
+              >
+            </td>
+            <td>Ruban Endommage, Probleme D'alimentation</td>
+            <td>2024-09-17</td>
+            <td>
+              <span class="label label-lg label-light-danger label-inline"
+                >Rebus</span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>96-13</td>
+            <td>All In One</td>
+            <td>Bonandjo</td>
+            <td>DSI</td>
+            <td>
+              <span class="label label-lg label-light-success label-inline"
+                >Fonctionnel</span
+              >
+            </td>
+            <td>RAM Endommage</td>
+            <td>2024-10-01</td>
+            <td>
+              <span class="label label-lg label-light-success label-inline"
+                >Remis en Service</span
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--end: Datatable-->
+    </div>
+
+    <script>
+      document
+        .getElementById("kt_search")
+        .addEventListener("click", function () {
+          filterTable();
+        });
+
+      document
+        .getElementById("kt_reset")
+        .addEventListener("click", function () {
+          document.getElementById("filterForm").reset();
+          filterTable();
+        });
+
+      function filterTable() {
+        let noDeSerie = document
+          .getElementById("noDeSerie")
+          .value.toUpperCase();
+        let appareil = document.getElementById("appareil").value.toUpperCase();
+        let agence = document.getElementById("agence").value.toUpperCase();
+        let direction = document
+          .getElementById("direction")
+          .value.toUpperCase();
+        let situation = document
+          .getElementById("situation")
+          .value.toUpperCase();
+        let startDate = document.getElementById("startDate").value;
+        let endDate = document.getElementById("endDate").value;
+
+        let table = document.getElementById("kt_datatable1");
+        let tr = table.getElementsByTagName("tr");
+
+        for (let i = 1; i < tr.length; i++) {
+          let tdNoDeSerie = tr[i]
+            .getElementsByTagName("td")[0]
+            .innerText.toUpperCase();
+          let tdAppareil = tr[i]
+            .getElementsByTagName("td")[1]
+            .innerText.toUpperCase();
+          let tdAgence = tr[i]
+            .getElementsByTagName("td")[2]
+            .innerText.toUpperCase();
+          let tdDirection = tr[i]
+            .getElementsByTagName("td")[3]
+            .innerText.toUpperCase();
+          let tdSituation = tr[i]
+            .getElementsByTagName("td")[7]
+            .innerText.toUpperCase();
+          let tdDate = tr[i].getElementsByTagName("td")[6].innerText;
+
+          let rowDate = new Date(tdDate);
+          let start = new Date(startDate);
+          let end = new Date(endDate);
+
+          let matchNoDeSerie =
+            noDeSerie === "" || tdNoDeSerie.includes(noDeSerie);
+          let matchAppareil = appareil === "" || tdAppareil.includes(appareil);
+          let matchAgence = agence === "" || tdAgence.includes(agence);
+          let matchDirection =
+            direction === "" || tdDirection.includes(direction);
+          let matchSituation =
+            situation === "" || tdSituation.includes(situation);
+          let matchDate =
+            (!startDate && !endDate) || (start <= rowDate && rowDate <= end);
+
+          if (
+            matchNoDeSerie &&
+            matchAppareil &&
+            matchAgence &&
+            matchDirection &&
+            matchSituation &&
+            matchDate
+          ) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
